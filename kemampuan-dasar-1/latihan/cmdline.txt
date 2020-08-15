@@ -1,0 +1,41 @@
+1. cls
+	riwayat history dia layar  akan versih
+
+2. cmd
+	membuka command line 
+3. cmdkey /lit
+	menampilkan user  
+4. color 
+	mengganti tampilan warna cmd
+5. copy 
+	untuk menduplikat  1 atau lebih file
+6. create 
+	membuat partisi pada disk
+7. date 
+	menampilkan waktu sekarang dan bisa menubahnya
+8. help
+	menampilkan bantuan penjelasan dari fungsi
+9. exit 
+	keluar dari commmand 
+10. find
+	menampilkan hasil pencarian 
+11. hostname
+	menampilkan nama host
+12. net print
+	menampilkan informasi alat yang tersambung dengan perangkat
+13.netsh wlan start hosted network
+	memmulai menajalankan virtual host atau membuat wifi 
+14.netsh wlan stop hostednetwork
+	mengehntikan proses berjalannya virtaul host network
+15.netstat
+	menampilkan koneksi TCP yang aktif
+16. powershell
+	menjalankan powershell
+17 powershell ise 
+	menjalankan powershell ise
+18. dir
+	menampilkan folder dan file
+19. tree  
+	menampilkan folder beserta subfolder dan file
+20. mkdir 
+	membuat direktori baru
