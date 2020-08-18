@@ -23,12 +23,12 @@ console.log(6+9,`hello`+` bobo`, 9/3, 3 === 9/3, 4*4 === 2+4+1+3+3 )
 
 
 //learn condition 
-let iceCream = 'Vanilla';
-if (iceCream === 'Vanilla') {
-    alert('Fav Gue nih');
-}else{
-    alert('iyywwwhhh');
-}
+// let iceCream = 'Vanilla';
+// if (iceCream === 'Vanilla') {
+//     alert('Fav Gue nih');
+// }else{
+//     alert('iyywwwhhh');
+// }
 
 
 
