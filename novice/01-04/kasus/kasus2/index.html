@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasus 2</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="form1">
+                <label for="inputNomorKendaraan">Input Plat Nomor Kendaraan</label>
+                <input type="text" name="platnomor" id="inputemail"/>
+                <button type="button" value="submit" onclick="validEmail()">KLIK</button>
+                <h1 id="hasil"></h1>
+            </div>
+        </div>
+    </section>
+    <script>
+        function validEmail(){
+            const inputEmail = document.getElementById("inputemail").value;
+            const outputHasil =  document.getElementById("hasil");
+            // let awal = /^([a-z0-9_\.-]+)/
+            // let akhir = /([\da-z\.-]+)\./
+            // ([a-z\.]{2,6})   
+
+
+            const regEmail = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})/ 
+            let temp = inputEmail;
+            let result = temp.match(regEmail);
+            
+        }
+    </script>
+</body>
+</html>

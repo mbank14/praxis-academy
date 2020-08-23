@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mencari Plat dari Indonesia</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="form1">
+                <label for="inputNomorKendaraan">Input Plat Nomor Kendaraan</label>
+                <input type="text" name="platnomor" id="inputPlat" />
+                <button type="button" value="submit" onclick="pencet()">KLIK</button>
+                <h1 id="hasil"></h1>
+            </div>
+        </div>
+    </section>
+    <script>
+        function pencet(){
+            const inputPlatNomor = document.getElementById("inputPlat").value;
+            const outputHasil =  document.getElementById("hasil");
+            
+            let temp = inputPlatNomor;
+            var cirebon = /^(e)\s\d{1,4}\s[a-zA-Z]{2,3}$/i;
+            var klaten = /^(ad)\s\d{1,4}\s[a-zA-Z]{2,3}$/i;
+
+            if (temp.match(cirebon)) {
+                outputHasil.innerHTML = "Anda dari Cirebon";
+                console.log("anda dari cirebon")
+            }else if (temp.match(klaten)) {
+                console.log("anda dari klaten")
+                outputHasil.innerHTML = "Anda dari klaten";
+            }else{
+                outputHasil.innerHTML =" anda tidak punya kendaraan"
+            }
+        }
+    </script>
+</body>
+</html>
