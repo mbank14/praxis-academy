@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+.halaman{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.halaman-item{
+    
+}
+
