@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat kamus menggunakan Map</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="form1">
+                <label for="kataYangInginDiterjemahkan">Masukan Bahasa Ingris</label>
+                <input type="text" name="" id="kataIng">
+                <label for="terjemahan">Terjemahan</label>
+                <input type="text" name="" id="kataTerjemahan">
+                <button type="button" value="klik" onclick="simpan()">submit</button>
+            </div>
+            <div class="hasil">
+                <h1 id="outputHasil">Disini output</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        let iniSet = new Map();
+        const hasil = document.getElementById("outputHasil");
+
+
+        function simpan(){
+            const kataInggris = document.getElementById("kataIng").value;
+            const terjemahan = document.getElementById("kataTerjemahan").value;
+            iniSet.set(kataInggris, terjemahan);
+            console.log(iniSet)
+            let lupa = " "
+            for (lupa of iniSet) {
+                hasil.innerHTML = lupa;
+            }
+            let t = document.createTextNode(lupa);
+            let c = document.createElement("h1");
+            c.appendChild(t)
+            document.body.appendChild(c);   
+
+        }
+                    
+    </script>
+</body>
+</html>
