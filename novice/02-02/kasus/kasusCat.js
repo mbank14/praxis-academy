@@ -15,7 +15,7 @@ class Cat{
   }
   
   pet(value){
-  	this.happiness += value/150;
+  	this.happiness += value/10;
     this.lonliness += value/100;
   }
   
@@ -26,7 +26,7 @@ class Cat{
 }
 
 let koko =new Cat(50, 50, 50, 50);
-console.log(koko.feed(50))
+console.log(koko.feed(50),koko.sleep(30),koko.pet(40))
 console.log(koko.feed(10))
 console.log(koko)
 
