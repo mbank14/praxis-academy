@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba FP</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.10.2/underscore-min.js" integrity="sha512-HKvDCFVKg8ZPGjecy6on7UECEpE76Y86h3GaE4JMCz+deFWdjcW/tWnh0hCfaBvURvlOa9f5CNVzt7EFkulYbw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.27.1/ramda.js" integrity="sha512-3sdB9mAxNh2MIo6YkY05uY1qjkywAlDfCf5u1cSotv6k9CZUSyHVf4BJSpTYgla+YHLaHG8LUpqV7MHctlYzlw==" crossorigin="anonymous"></script></head>
+<body>
+
+    <section class="container">
+        <div class="list">
+            <div class="item">
+                <label for="">ramda</label>
+                <p id='consoleLogRamda'></p>
+            </div>
+            <div class="item">
+                <label for="">underscore</label>
+                <p id="consoleLogUnder"></p>
+            </div>
+            <div class="item">
+                <label for="">lodash</label>
+                <p id="consoleLogLodash"></p>
+            </div>
+        </div>
+    </section>
+    <script>
+        let hasilRamda = document.getElementById("consoleLogRamda");
+        let hasilUnder = document.getElementById("consoleLogUnder");
+        let hasilLodash =document.getElementById("consoleLogLodash");
+
+
+        const greet = R.replace('{name}', R.__, 'Hello, {name}!');
+        const person = persons.find(R.propEq('name', 'Robbie'));
+        const classyGreeting = (firstName, lastName) => "The name's " + lastName + ", " + firstName + " " + lastName
+        const yellGreeting = R.compose(R.toUpper, classyGreeting);
+        yellGreeting('James', 'Bond'); //=> "THE NAME'S BOND, JAMES BOND"
+
+        R.compose(Math.abs, R.add(1), R.multiply(2))(-4)
+        console.log(greet('Inaa'));
+        hasil.innerHTML = greet('inaa') ;
+        </script>
+</body>
+</html>
