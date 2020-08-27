@@ -1,3 +1,4 @@
+const process = require('process');
 function Alpha(){}
 
 Alpha.prototype.isAlpha = function(letter){
