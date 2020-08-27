@@ -30,3 +30,5 @@ let jumlahFPChain = meetUps.filter((m) => {
 },0);
 
 console.log(jumlahFPChain);
+
+// pada latihan ini decarative function dapat digunakan dengan cara chainning
