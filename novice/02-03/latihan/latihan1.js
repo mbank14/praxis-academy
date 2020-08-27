@@ -17,11 +17,11 @@ let book = [
     }
 ]
 
-//................CONTOH IMPERATIVE PATTERN..............
-// for (let i = 0; i < book.length; i++) {
-//     book[i].lastRead = new Date();
+// ................CONTOH IMPERATIVE PATTERN..............
+for (let i = 0; i < book.length; i++) {
+    book[i].lastRead = new Date();
     
-// }
+}
 
 
 //................ CONTOH DECLARATIVE PATTERN...............
@@ -31,4 +31,4 @@ book.map((buku) => {
     return buku;
 });
 
-console.log(book)
+console.log(book);
