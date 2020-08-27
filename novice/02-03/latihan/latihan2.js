@@ -15,7 +15,7 @@ let meetup = [
         member: 489
     }
 ]
-
+//contoh imperative
 let activeMeetUp = [];
 for (let i = 0; i < meetup.length; i++) {
     let m = meetup[i];
@@ -25,4 +25,12 @@ for (let i = 0; i < meetup.length; i++) {
     
 }
 
-console.log
+console.log(activeMeetUp);
+console.log('=================== contoh deklaratif================')
+
+let activeMeetUpFP = [];
+activeMeetUpFP = (meetup.filter((m) => {
+    return m.isActive;
+}));
+
+console.log(activeMeetUpFP)
