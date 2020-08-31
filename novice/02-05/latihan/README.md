@@ -15,3 +15,4 @@ sering disebut dengan *exceptions* dimana terjadi saat melakukan eksekusi sepert
 3. dan lainya.
 
 ## Logical Error
+keadaan ini terjadi ketika pengembang aplikasi membuat kesalahan *logic* pada program yang tidak memiliki hasil yang diekspektasikan. ini adalah error yang sangat sulit untuk dideteksi.
