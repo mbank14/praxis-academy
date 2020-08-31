@@ -13,7 +13,7 @@ function reliableMultiply(a, b) {
   try{
     console.log("aw aw ", Number(primitiveMultiply(a,b)));
   }catch(e){
-	console.log("ada yang error ",e);
+	console.log("ada yang error " + e);
 }
 }
 
