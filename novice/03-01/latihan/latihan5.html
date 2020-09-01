@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan dom atribut</title>
+</head>
+<body>
+    <p data-classified="secret">The launch code is 00000000.</p>
+    <p data-classified="unclassified">I have two feet.</p>
+
+<script>
+  let paras = document.body.getElementsByTagName("p");
+  for (let para of Array.from(paras)) {
+    if (para.getAttribute("data-classified") == "secret") {
+        // hilangkan tag p dengan atribut data-classified yang memiliki value secret
+      para.remove();
+    }
+  }
+</script>
+</body>
+</html>
