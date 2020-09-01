@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p style="border: 5px solid red">
+        I'm boxed in
+      </p>
+      
+      <script>
+        let para = document.body.getElementsByTagName("p")[0];
+        console.log("clientHeight: ", para.clientHeight);
+        console.log("offsetHeight: ", para.offsetHeight);
+        console.log("clientWidth: ", para.clientWidth);
+      </script>
 </body>
 </html>
