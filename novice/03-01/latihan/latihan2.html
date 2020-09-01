@@ -6,6 +6,24 @@
     <title>Latihan 2 DOM</title>
 </head>
 <body>
-    
+    <p>My ostrich Gertrude:</p>
+    <p><img id="gertrude" src="img/ostrich.png"></p>
+
+    <p>One</p>
+    <p>Two</p>
+    <p>Three</p>
+
+
+
+<script>
+    // finding elemen
+  let ostrich = document.getElementById("gertrude");
+  console.log(ostrich.src);
+</script>
+<script>
+    // changing documnent
+    let paragraphs = document.body.getElementsByTagName("p");
+    document.body.insertBefore(paragraphs[3], paragraphs[0]);
+  </script>
 </body>
 </html>
