@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar intance</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{foo}}</p>
+        <!-- button ini tidak akan menubah foo -->
+        <button v-on:click="foo = 'sikap dia berubah karena cinta'">mencoba merubah sikap dia</button>
+    </div>
+
+    <script>
+        var obj = {
+            foo: 'bar'
+        }
+
+        // Object.freeze(obj)
+
+        var app = new Vue({
+            el: '#app',
+            data: obj
+        })
+    </script>
+</body>
+</html>

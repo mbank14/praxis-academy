@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ganti warna</title>
+    <style>
+        .container{
+            height: 100%; width: 100%;
+
+        }
+        .kotak{
+            background: rgb(123,22, 1);
+            height: 50px; width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kotak"></div>
+    </div>
+
+    <script>
+        const ubahKotak = document.querySelector('.kotak');
+        merah = Math.round(Math.random()*255);
+        hijau = Math.round(Math.random()*255);
+        biru = Math.round(Math.random()*255);
+        
+        setInterval(function(){
+            let result = merah+'.'+biru+'.'+hijau;
+            ubahKotak.style.background = "rgb(223.112.223)";
+        }, 1000);
+        
+    </script>
+</body>
+</html>
