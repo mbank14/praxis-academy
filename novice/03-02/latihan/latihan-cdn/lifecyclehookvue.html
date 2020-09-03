@@ -7,15 +7,57 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-    
+    <div id="app"></div>
     <script>
-        new Vue({
-            data: {
-                a:1
+        new Vue({    
+            el: '#app',
+            template: `
+                <div>
+                    <div class="jumbotron text-center">
+                        <h1>Bootstrap 4</h1>
+                        <p>Latihan012 - Lifecycle Hooks Pada Vue.js</p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="belajar-hook">{{ pesan }}</div>
+                                <br/>
+                                <button v-on:click="renderVirtualDom">re-Render Virtual DOM</button>
+                                <br/>
+                                <div v-if="rendered"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `,
+            data : {
+                    pesan: 'Halo Vue',
+                    rendered: 0
+            },
+            methods: {
+                renderVirtualDom() {
+                  this.rendered = 1
+                }
             },
             created: function(){
-                console.log('a is: ' + this.a);
-            }
+                console.log('log dari created():');
+                console.log('pesan: ' + this.pesan);
+                console.log(document.getElementById('belajar-hook'));
+                console.log('=========');
+            },
+            mounted() {
+                console.log('log dari mounted():');
+                console.log('pesan: ' + this.pesan);
+                console.log(document.getElementById('belajar-hook'));
+                console.log('======');
+            },
+            updated() {
+                console.log('log dari updated():');
+                this.pesan = 'Semangat Pagi Dunia';
+                console.log('pesan: ' + this.pesan);
+                console.log(document.getElementById('belajar-hook'));
+                console.log('==========');
+            },
         })
     </script>
 </body>
