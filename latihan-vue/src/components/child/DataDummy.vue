@@ -10,9 +10,12 @@
             </tr>
             </thead>
             <tbody>
-            <tr v-for="data in dataku" :key="data">
+            <tr v-for="data in dataku" :key="data.id">
                 <td>{{ data.id }}</td>
-                <td>{{ data.body}}</td>
+                <td v-on:click="tampil">ini tittle {{ data.title}} :<br/>
+                    <button v-on:click="sembunyi = !sembunyi">tombol</button>
+                    <p v-if="!sembunyi">{{data.body}}</p>
+                </td>
             </tr>
             </tbody>
         </table>
@@ -25,6 +28,8 @@ export default {
     data: function(){
         return{
             dataku: [],
+            tampilku: [],
+            sembunyi: false,
         }
     },
     beforeMount(){
@@ -35,6 +40,9 @@ export default {
             const res = await fetch('https://jsonplaceholder.typicode.com/posts');
             const data = await res.json();
             this.dataku = data;
+        },
+        tampil: function(){
+            return this.dataku.body.push(this.tampilku);
         },
     },
 }
